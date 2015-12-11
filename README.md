@@ -18,8 +18,8 @@ Checklist:
 - [x] Install node.js v4.0 keatas atau menggunakan NVM
 - [x] Install Watchman (beserta setting compability watchman di ubuntu)
 - [x] Install Flow
-- [ ] Install & Setting Environtment Variabel Android JDK dan SDK
-- [ ] Install SDK yang akan digunakan untuk react-native android
+- [X] Install & Setting Environtment Variabel Android JDK dan SDK
+- [X] Install SDK yang akan digunakan untuk react-native android
 - [ ] Install VirtualBox dan GenyMotion
 - [ ] Download dan Run virtual Device android
 - [ ] install react-native-cli
@@ -115,4 +115,14 @@ lalu ketik
 ```bash
 $ android
 ```
-Setelah dialog Android SDK Manager muncul, install packages seperti gambar di bawah ini
+Setelah dialog Android SDK Manager muncul tinggal menginstall SDK yang diperlukan
+
+## Install SDK yang akan digunakan untuk react-native android
+Install seperti gambar dibawah ini
+
+![ziliun](https://facebook.github.io/react-native/img/AndroidSDK1.png "AndroidSDK1.png")
+
+![ziliun](https://facebook.github.io/react-native/img/AndroidSDK1.png "AndroidSDK1.png")
+
+
+## Install VirtualBox dan GenyMotion
