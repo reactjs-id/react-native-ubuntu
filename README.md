@@ -84,6 +84,13 @@ $ #Flow, a static type checker for JavaScript, version 0.19.1
 
 ## Install & Setting Environment Variabel Android JDK dan SDK
 
+untuk ubuntu 64bit 13.10 keatas, anda harus menginstall additional pacckage ini terlebih dahulu
+```bash
+sudo dpkg --add-architecture i386
+sudo apt-get update
+sudo apt-get install libncurses5:i386 libstdc++6:i386 zlib1g:i386
+```
+
 Download [JDK](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)
 copy hasil download ke /home/(user) lalu jalankan perintah
 ```bash
@@ -94,8 +101,12 @@ Download [standalone android SDK](https://developer.android.com/sdk/installing/i
 copy hasil download ke /home/(user) lalu jalankan perintah
 ```bash
 $ tar -xvzf android-sdk_r24.4.1-linux.tgz
+$
+```
+```bash
 $ nano ~/.bashrc
 ```
+
 Akan terbuka nano text editor, lalu masukan kode berikut
 
 ```bash
@@ -171,4 +182,6 @@ build project dan jalankan pada Genymotion (jangan ada device android yg terkone
 ```bash
 $ react-native run-android
 ```
-Jika muncul tampilan seperti ini, maka slamat, anda sukses men-setting development environment react-native di Ubuntu.
+Jika muncul tampilan seperti ini, maka "SLAMAT!!", anda sukses men-setting development environment react-native di Ubuntu.
+
+![ReactNativeUbuntu](img/react-native-ubuntu1.png "React Native Ubuntu")
