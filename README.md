@@ -1,5 +1,5 @@
 # react-native-ubuntu
-Cara Setting development environtment react-native di Ubuntu, beserta contoh aplikasi.
+Cara Setting development environment react-native di Ubuntu, beserta contoh aplikasi.
 Pada contoh ini saya menggunakan Ubuntu 14.04 LTS dan sudah terinstall git.
 Semua download zip ditaruh di folder
 
@@ -11,19 +11,18 @@ Jika ada pertanyaan, silahkan bertanya di group Facebook [ReactJS Indonesia](htt
 
 [Contoh Aplikasi](examples/README.md)
 
-## Setting development environtment react-native di ubuntu
+## Setting development environment react-native di ubuntu
 
 Checklist yang harus dilakukan:
 
 - [x] Install node.js v4.0 keatas atau menggunakan NVM
 - [x] Install Watchman (beserta setting compability watchman di ubuntu)
 - [x] Install Flow
-- [x] Install & Setting Environtment Variabel Android JDK dan SDK
+- [x] Install & Setting Environment Variabel Android JDK dan SDK
 - [x] Install SDK yang akan digunakan untuk react-native android
 - [x] Install VirtualBox dan GenyMotion
 - [x] Download dan Run virtual Device android
-- [ ] install react-native-cli
-- [ ] Init project
+- [x] Install react-native-cli & init project
 - [ ] Contoh menggunakan library 3rd party dari npm
 - [ ] Deploy APK
 
@@ -45,8 +44,11 @@ Close dan buka terminal anda,
 Install node 4.2.3 menggunakan NVM
 ```bash
 $ nvm install 4.2.3
+$ nvm use 4.2.3
+
 $ node -v
 $ #v4.2.3
+$ nvm alias default node
 ```
 ## Install Watchman
 
@@ -80,39 +82,55 @@ $ flow version
 $ #Flow, a static type checker for JavaScript, version 0.19.1
 ```
 
-## Install & Setting Environtment Variabel Android JDK dan SDK
+## Install & Setting Environment Variabel Android JDK dan SDK
 
 Download [JDK](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)
 copy hasil download ke /home/(user) lalu jalankan perintah
 ```bash
 $ tar -xvzf jdk-8u65-linux-x64.tar.gz
-$ export JAVA_HOME=/home/(user)/jdk1.8.0_65
-$ export PATH=$PATH:/home/(user)/jdk1.8.0_65/bin
-
-$ javac -version
-$ #javac 1.8.0_65
 ```
 
 Download [standalone android SDK](https://developer.android.com/sdk/installing/index.html?pkg=tools)
 copy hasil download ke /home/(user) lalu jalankan perintah
 ```bash
 $ tar -xvzf android-sdk_r24.4.1-linux.tgz
-$ export ANDROID_HOME=/home/(user)/android-sdk-linux
 $ nano ~/.bashrc
 ```
 Akan terbuka nano text editor, lalu masukan kode berikut
 
 ```bash
+#JavaDev PATH
+export JAVA_HOME=~/jdk1.8.0_65
+export PATH=$PATH:~/jdk1.8.0_65/bin
 #AndroidDev PATH
+export ANDROID_HOME=~/android-sdk-linux
 export PATH=${PATH}:~/android-sdk-linux/tools
 export PATH=${PATH}:~/android-sdk-linux/platform-tools
 ```
-(user) harus diganti dengan nama user yang anda gunakan!
+
 setelah itu save dengan menekan ctr+x enter, lalu Y dan enter.
+
+```bash
+$ nano ~/.bash_profile
+```
+Akan terbuka nano text editor, lalu masukan kode berikut
+
+```bash
+#JavaDev PATH
+export JAVA_HOME=~/jdk1.8.0_65
+export PATH=$PATH:~/jdk1.8.0_65/bin
+#AndroidDev PATH
+export ANDROID_HOME=~/android-sdk-linux
+export PATH=${PATH}:~/android-sdk-linux/tools
+export PATH=${PATH}:~/android-sdk-linux/platform-tools
+```
 
 Tutup dan buka lagi terminal.
 lalu ketik
 ```bash
+$ javac -version
+$ #javac 1.8.0_65
+
 $ android
 ```
 Setelah dialog Android SDK Manager muncul tinggal menginstall SDK yang diperlukan
@@ -137,3 +155,20 @@ Tampilan jika Genymotion berjalan dengan baik
 ![Genymotion1](img/genymotion2.png "react-native ubuntu Indonesia genymotion 2")
 
 Tarik icon yang saya tandai dalam kotak merah keatas, agar mudah mengakses menu ReloadJS (pada saat develop react native nanti).
+
+## Install react-native-cli & init project
+
+```bash
+$ sudo npm install -g react-native-cli #pastikan node -v anda 4.0 keatas
+$ react-native init hariini
+```
+run watcher JS server react-native
+```bash
+$ react-native start
+```
+Buka terminal baru,
+build project dan jalankan pada Genymotion (jangan ada device android yg terkonek dengan komputer saat perintah dijalankan)
+```bash
+$ react-native run-android
+```
+Jika muncul tampilan seperti ini, maka slamat, anda sukses men-setting development environment react-native di Ubuntu.
