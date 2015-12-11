@@ -113,4 +113,4 @@ lalu ketik
 ```bash
 $ android
 ```
-setelah Android SDK Manager akan muncul maka install packages berikut ini
+Setelah dialog Android SDK Manager muncul, install packages seperti gambar di bawah ini
