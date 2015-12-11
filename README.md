@@ -1,6 +1,7 @@
 # react-native-ubuntu
 Cara Setting development environtment react-native di Ubuntu, beserta contoh aplikasi.
 
+Pada contoh ini saya menggunakan Ubuntu 14.04 LTS.
 
 ## Setting development environtment react-native di ubuntu
 
@@ -18,3 +19,14 @@ Checklist:
 - [ ] Init project
 - [ ] Contoh menggunakan library 3rd party dari npm
 - [ ] Deploy APK
+
+## Install node.js v4.0 keatas atau menggunakan NVM
+
+Pastikan node -v anda v4.0 keatas
+untuk mengecek versi node anda
+
+- node -v
+
+jika belum v4.0 keatas install [NVM](https://github.com/creationix/nvm#installation)
+
+- curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.29.0/install.sh | bash
