@@ -101,8 +101,8 @@ Download [standalone android SDK](https://developer.android.com/sdk/installing/i
 copy hasil download ke /home/(user) lalu jalankan perintah
 ```bash
 $ tar -xvzf android-sdk_r24.4.1-linux.tgz
-$
 ```
+
 ```bash
 $ nano ~/.bashrc
 ```
