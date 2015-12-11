@@ -2,7 +2,7 @@
 Cara Setting development environtment react-native di Ubuntu, beserta contoh aplikasi.
 
 
-# Setting development environtment react-native di ubuntu
+## Setting development environtment react-native di ubuntu
 
 Checklist:
 
