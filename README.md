@@ -1,7 +1,8 @@
 # react-native-ubuntu
 Cara Setting development environtment react-native di Ubuntu, beserta contoh aplikasi.
+Pada contoh ini saya menggunakan Ubuntu 14.04 LTS dan sudah terinstall git.
 
-Pada contoh ini saya menggunakan Ubuntu 14.04 LTS.
+Jika ada pertanyaan, silahkan bertanya di group FB [ReactJS Indonesia](https://www.facebook.com/groups/442974152553174/).
 
 ## Setting development environtment react-native di ubuntu
 
@@ -9,7 +10,7 @@ Checklist:
 
 - [x] Install node.js v4.0 keatas atau menggunakan NVM
 - [x] Install Watchman (beserta setting compability watchman di ubuntu)
-- [ ] Install Flow
+- [x] Install Flow
 - [ ] Install Android SDK
 - [ ] Setting Environtment Variable untuk ANDROID_HOME
 - [ ] Install SDK yang akan digunakan untuk react-native android
@@ -59,3 +60,12 @@ $ sudo make install
 Pada kondisi default, watchaman pada ubuntu hanya bisa jalan 1 user. Sehingga perintah 'react-native start' pada ubuntu hanya bisa jalan 1 kali (untuk start lagi harus merestart komputer).
 
 Untuk memperbaikinya anda harus menambah value [inotify watchers](https://github.com/guard/listen/wiki/Increasing-the-amount-of-inotify-watchers) pada ubuntu.
+
+## Install Flow
+Simple saja (untuk linux 64 bit), untuk ubuntu versi lain silahkan kunjungi [website flow](http://flowtype.org/docs/getting-started.html#_).
+
+```bash
+$ sudo npm install -g flow-bin
+```
+
+## Install Android SDK
