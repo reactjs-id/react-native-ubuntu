@@ -2,7 +2,7 @@
 Cara Setting development environtment react-native di Ubuntu, beserta contoh aplikasi.
 Pada contoh ini saya menggunakan Ubuntu 14.04 LTS dan sudah terinstall git.
 
-Jika ada pertanyaan, silahkan bertanya di group FB [ReactJS Indonesia](https://www.facebook.com/groups/442974152553174/).
+Jika ada pertanyaan, silahkan bertanya di group Facebook [ReactJS Indonesia](https://www.facebook.com/groups/442974152553174/).
 
 ## Setting development environtment react-native di ubuntu
 
