@@ -8,7 +8,7 @@ Pada contoh ini saya menggunakan Ubuntu 14.04 LTS.
 Checklist:
 
 - [x] Install node.js v4.0 keatas atau menggunakan NVM
-- [ ] Install Watchman (beserta setting compability watchman di ubuntu)
+- [x] Install Watchman (beserta setting compability watchman di ubuntu)
 - [ ] Install Flow
 - [ ] Install Android SDK
 - [ ] Setting Environtment Variable untuk ANDROID_HOME
@@ -30,16 +30,30 @@ $ node -v
 ```
 
 jika belum v4.0 keatas install [NVM](https://github.com/creationix/nvm#installation)
-
-- `curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.29.0/install.sh | bash`
+```bash
+$ curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.29.0/install.sh | bash
+```
 
 Close dan buka terminal anda,
 Install node 4.2.3 menggunakan NVM
-
-- `nvm install 4.2.3`
-- `node -v`
-- `//v4.2.3`
-
+```bash
+$ nvm install 4.2.3
+$ node -v
+$ #v4.2.3
+```
 ## Install Watchman (beserta setting compability watchman di ubuntu)
 
-Install [Watchman]
+Install [Watchman](https://facebook.github.io/watchman/docs/install.html)
+```bash
+$ git clone https://github.com/facebook/watchman.git
+$ cd watchman
+$ git checkout v4.1.0  # the latest stable release
+$ ./autogen.sh
+$ ./configure
+$ make
+$ sudo make install
+```
+
+Pada kondisi default, watchaman pada ubuntu hanya bisa jalan 1 user. Sehingga perintah 'react-native start' pada ubuntu hanya bisa jalan 1 kali (untuk start lagi harus merestart komputer)
+
+Untuk memperbaikinya anda harus menambah value [inotify watchers](https://github.com/guard/listen/wiki/Increasing-the-amount-of-inotify-watchers) pada ubuntu.
