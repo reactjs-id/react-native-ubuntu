@@ -1,6 +1,11 @@
 # react-native-ubuntu
 Cara Setting development environtment react-native di Ubuntu, beserta contoh aplikasi.
 Pada contoh ini saya menggunakan Ubuntu 14.04 LTS dan sudah terinstall git.
+Semua download zip ditaruh di folder
+
+```bash
+$ /home/(user)
+```
 
 Jika ada pertanyaan, silahkan bertanya di group Facebook [ReactJS Indonesia](https://www.facebook.com/groups/442974152553174/).
 
@@ -11,8 +16,7 @@ Checklist:
 - [x] Install node.js v4.0 keatas atau menggunakan NVM
 - [x] Install Watchman (beserta setting compability watchman di ubuntu)
 - [x] Install Flow
-- [ ] Install Android SDK
-- [ ] Setting Environtment Variable untuk ANDROID_HOME
+- [ ] Install & Setting Environtment Variabel Android JDK dan SDK
 - [ ] Install SDK yang akan digunakan untuk react-native android
 - [ ] Install VirtualBox dan GenyMotion
 - [ ] Download dan Run virtual Device android
@@ -74,4 +78,39 @@ $ flow version
 $ #Flow, a static type checker for JavaScript, version 0.19.1
 ```
 
-## Install Android SDK
+## Install & Setting Environtment Variabel Android JDK dan SDK
+
+Download [JDK](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)
+copy hasil download ke /home/(user) lalu jalankan perintah
+```bash
+$ tar -xvzf jdk-8u65-linux-x64.tar.gz
+$ export JAVA_HOME=/home/(user)/jdk1.8.0_65
+$ export PATH=$PATH:/home/(user)/jdk1.8.0_65/bin
+
+$ javac -version
+$ #javac 1.8.0_65
+```
+
+Download [standalone android SDK](https://developer.android.com/sdk/installing/index.html?pkg=tools)
+copy hasil download ke /home/(user) lalu jalankan perintah
+```bash
+$ tar -xvzf android-sdk_r24.4.1-linux.tgz
+$ export ANDROID_HOME=/home/(user)/android-sdk-linux
+$ nano ~/.bashrc
+```
+Akan terbuka nano text editor, lalu masukan kode berikut
+
+```bash
+#AndroidDev PATH
+export PATH=${PATH}:~/android-sdk-linux/tools
+export PATH=${PATH}:~/android-sdk-linux/platform-tools
+```
+(user) harus diganti dengan nama user yang anda gynakan!
+setelah itu tekan ctr+x enter, lalu Y dan enter.
+
+Tutup dan buka lagi terminal.
+lalu ketik
+```bash
+$ android
+```
+setelah Android SDK Manager akan muncul maka install packages berikut ini
