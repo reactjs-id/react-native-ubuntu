@@ -9,7 +9,7 @@ $ /home/(user)
 
 Jika ada pertanyaan, silahkan bertanya di group Facebook [ReactJS Indonesia](https://www.facebook.com/groups/442974152553174/).
 
-[Contoh Aplikasi](https://github.com/reactjs-id/react-native-ubuntu/blob/master/examples/README.md)
+[Contoh Aplikasi](examples/README.md)
 
 ## Setting development environtment react-native di ubuntu
 
