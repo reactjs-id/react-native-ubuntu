@@ -25,7 +25,9 @@ Checklist:
 Pastikan node -v anda v4.0 keatas
 untuk mengecek versi node anda
 
-- `node -v`
+```bash
+$ node -v
+```
 
 jika belum v4.0 keatas install [NVM](https://github.com/creationix/nvm#installation)
 
@@ -39,3 +41,5 @@ Install node 4.2.3 menggunakan NVM
 - `//v4.2.3`
 
 ## Install Watchman (beserta setting compability watchman di ubuntu)
+
+Install [Watchman]
