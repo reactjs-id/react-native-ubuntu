@@ -9,6 +9,8 @@ $ /home/(user)
 
 Jika ada pertanyaan, silahkan bertanya di group Facebook [ReactJS Indonesia](https://www.facebook.com/groups/442974152553174/).
 
+(Contoh Aplikasi)[https://github.com/reactjs-id/react-native-ubuntu/examples/README.md]
+
 ## Setting development environtment react-native di ubuntu
 
 Checklist:
@@ -105,8 +107,8 @@ Akan terbuka nano text editor, lalu masukan kode berikut
 export PATH=${PATH}:~/android-sdk-linux/tools
 export PATH=${PATH}:~/android-sdk-linux/platform-tools
 ```
-(user) harus diganti dengan nama user yang anda gynakan!
-setelah itu tekan ctr+x enter, lalu Y dan enter.
+(user) harus diganti dengan nama user yang anda gunakan!
+setelah itu save dengan menekan ctr+x enter, lalu Y dan enter.
 
 Tutup dan buka lagi terminal.
 lalu ketik
