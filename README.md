@@ -13,15 +13,15 @@ Jika ada pertanyaan, silahkan bertanya di group Facebook [ReactJS Indonesia](htt
 
 ## Setting development environtment react-native di ubuntu
 
-Checklist:
+Checklist yang harus dilakukan:
 
 - [x] Install node.js v4.0 keatas atau menggunakan NVM
 - [x] Install Watchman (beserta setting compability watchman di ubuntu)
 - [x] Install Flow
-- [X] Install & Setting Environtment Variabel Android JDK dan SDK
-- [X] Install SDK yang akan digunakan untuk react-native android
-- [ ] Install VirtualBox dan GenyMotion
-- [ ] Download dan Run virtual Device android
+- [x] Install & Setting Environtment Variabel Android JDK dan SDK
+- [x] Install SDK yang akan digunakan untuk react-native android
+- [x] Install VirtualBox dan GenyMotion
+- [x] Download dan Run virtual Device android
 - [ ] install react-native-cli
 - [ ] Init project
 - [ ] Contoh menggunakan library 3rd party dari npm
@@ -120,7 +120,20 @@ Setelah dialog Android SDK Manager muncul tinggal menginstall SDK yang diperluka
 ## Install SDK yang akan digunakan untuk react-native android
 Install SDK seperti gambar dibawah ini
 
-![SDK1](img/androidSDK1.png "react-native ubuntu Indonesia")
-![SDK2](img/androidSDK2.png "react-native ubuntu Indonesia")
+![SDK1](img/androidSDK1.png "react-native ubuntu Indonesia android SDK 1")
+![SDK2](img/androidSDK2.png "react-native ubuntu Indonesia android SDK 2")
 
 ## Install VirtualBox dan GenyMotion
+
+Silahkan download [GenyMotion & Virtualbox](https://www.genymotion.com/#!/developers/user-guide), ikuti langkah-langkah pada websitenya tinggal register dan download versi freenya.
+
+## Download dan Run virtual Device android
+
+Pada contoh ini saya menggunakan virtual device Sony Xperia Z
+![Genymotion1](img/genymotion1.png "react-native ubuntu Indonesia genymotion 1")
+
+Setelah selesai download, silahkan run virtual device.
+Tampilan jika Genymotion berjalan dengan baik
+![Genymotion1](img/genymotion2.png "react-native ubuntu Indonesia genymotion 2")
+
+Tarik icon yang saya tandai dalam kotak merah keatas, agar mudah mengakses menu ReloadJS (pada saat develop react native nanti).
