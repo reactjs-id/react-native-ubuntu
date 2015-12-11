@@ -62,10 +62,15 @@ Pada kondisi default, watchaman pada ubuntu hanya bisa jalan 1 user. Sehingga pe
 Untuk memperbaikinya anda harus menambah value [inotify watchers](https://github.com/guard/listen/wiki/Increasing-the-amount-of-inotify-watchers) pada ubuntu.
 
 ## Install Flow
-Simple saja (untuk linux 64 bit), untuk ubuntu versi lain silahkan kunjungi [website flow](http://flowtype.org/docs/getting-started.html#_).
+Flow saat ini support untuk arsitektur 64 bit, untuk ubuntu versi lain silahkan kunjungi [website flow](http://flowtype.org/docs/getting-started.html#_).
 
 ```bash
-$ sudo npm install -g flow-bin
+$ wget https://facebook.github.io/flow/downloads/flow-linux64-latest.zip
+$ unzip flow-linux64-latest.zip
+$ sudo mvflow /usr/bin
+
+$ flow --version
+$ #Flow, a static type checker for JavaScript, version 0.15.0
 ```
 
 ## Install Android SDK
