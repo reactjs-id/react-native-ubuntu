@@ -118,11 +118,9 @@ $ android
 Setelah dialog Android SDK Manager muncul tinggal menginstall SDK yang diperlukan
 
 ## Install SDK yang akan digunakan untuk react-native android
-Install seperti gambar dibawah ini
+Install SDK seperti gambar dibawah ini
 
-![SDK1](https://facebook.github.io/react-native/img/AndroidSDK1.png "react-native ubuntu Indonesia")
-
-![SDK2](https://facebook.github.io/react-native/img/AndroidSDK2.png "react-native ubuntu Indonesia")
-
+![SDK1](img/androidSDK1.png "react-native ubuntu Indonesia")
+![SDK2](img/androidSDK2.png "react-native ubuntu Indonesia")
 
 ## Install VirtualBox dan GenyMotion
