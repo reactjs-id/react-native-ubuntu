@@ -67,10 +67,11 @@ Flow saat ini support untuk arsitektur 64 bit, untuk ubuntu versi lain silahkan 
 ```bash
 $ wget https://facebook.github.io/flow/downloads/flow-linux64-latest.zip
 $ unzip flow-linux64-latest.zip
-$ sudo mvflow /usr/bin
+$ cd flow
+$ echo -e "\nPATH=\"\$PATH:$(pwd)/\"" >> ~/.bashrc && source ~/.bashrc
 
-$ flow --version
-$ #Flow, a static type checker for JavaScript, version 0.15.0
+$ flow version
+$ #Flow, a static type checker for JavaScript, version 0.19.1
 ```
 
 ## Install Android SDK
